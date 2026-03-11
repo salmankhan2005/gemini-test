@@ -7,10 +7,10 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 // All supported models
 export const MODELS = [
-    { id: 'gemini-3.1-pro-preview', name: 'Gemini 3.1 Pro', provider: 'gemini' },
-    { id: 'gemini-3.1-flash-lite-preview', name: 'Gemini 3.1 Flash Lite', provider: 'gemini' },
-    { id: 'gemini-3-pro-preview', name: 'Gemini 3 Pro', provider: 'gemini' },
-    { id: 'gemini-3-flash-preview', name: 'Gemini 3 Flash', provider: 'gemini' },
+    { id: 'gemini-3.1-pro-preview', name: 'Gemini 3.1 Pro (Preview)', provider: 'gemini' },
+    { id: 'gemini-3.1-flash-lite-preview', name: 'Gemini 3.1 Flash Lite (Preview)', provider: 'gemini' },
+    { id: 'gemini-3-pro-preview', name: 'Gemini 3 Pro (Preview)', provider: 'gemini' },
+    { id: 'gemini-3-flash-preview', name: 'Gemini 3 Flash (Preview)', provider: 'gemini' },
     { id: 'gemini-flash-latest', name: 'Gemini Flash', provider: 'gemini' },
     { id: 'gemini-flash-lite-latest', name: 'Gemini Flash Lite', provider: 'gemini' },
     { id: 'gemini-2.5-pro-preview-05-06', name: 'Gemini 2.5 Pro', provider: 'gemini' },
