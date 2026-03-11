@@ -176,6 +176,11 @@ app.post('/api/chat', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`🤖 AJ11 server running on http://localhost:${PORT}`);
-});
+// Only listen if not running on Vercel (serverless)
+if (!process.env.VERCEL) {
+    app.listen(PORT, () => {
+        console.log(`🤖 AJ11 server running on http://localhost:${PORT}`);
+    });
+}
+
+export default app;
