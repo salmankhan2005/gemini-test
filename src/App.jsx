@@ -10,7 +10,7 @@ export default function App() {
     const [activeConversation, setActiveConversation] = useState(null);
     const [sidebarOpen, setSidebarOpen] = useState(true);
     const [models, setModels] = useState([]);
-    const [selectedModel, setSelectedModel] = useState('gemini-2.0-flash');
+    const [selectedModel, setSelectedModel] = useState('gemini-3.1-pro-preview');
 
     // Fetch models
     useEffect(() => {
